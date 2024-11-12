@@ -530,7 +530,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "pdfcrack"
+name = "pdfrip"
 version = "0.1.0"
 dependencies = [
  "clap",

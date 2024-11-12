@@ -1,8 +1,11 @@
 # PDF Cracker using RUST
 
+This project is copied from: https://github.com/mufeedvh/pdfrip
+
+Create a new project:
 
 ```bash
-cargo new pdfcrack
+cargo new pdfrip
 ```
 
 update dependencies in `Cargo.toml`:
@@ -34,5 +37,5 @@ install cmake: `sudo apt install cmake`
 
 to run:
 ```
-./target/debug/pdfcrack --help
+./target/debug/pdfrip --help
 ```
