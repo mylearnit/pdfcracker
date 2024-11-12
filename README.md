@@ -2,6 +2,9 @@
 
 This project is copied from: https://github.com/mufeedvh/pdfrip
 
+
+### How to build from scrach
+
 Create a new project:
 
 ```bash
@@ -20,7 +23,9 @@ colored = "2.0.0"
 once_cell = "1.9.0"
 ```
 
-Run Cargo build:
+### Build and run
+
+1. Run Cargo build:
 
 ```shell
 cargo build
@@ -35,7 +40,15 @@ failed to execute command: No such file or directory (os error 2)
 install cmake: `sudo apt install cmake`
 
 
-to run:
+2. to run:
 ```
 ./target/debug/pdfrip --help
+```
+
+### Demo
+
+There is sample document `sib.pdf` with password, which is the last five digits of customer registered mobile number and date of birth (DOB) in DDMMYY. my dob is 04/Dec/1988, so the password will be xxxxx041288
+
+```
+./target/debug/pdfrip sib.pdf -q {0-1000}041288
 ```
