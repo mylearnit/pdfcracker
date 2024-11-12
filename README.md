@@ -47,8 +47,8 @@ install cmake: `sudo apt install cmake`
 
 ### Demo
 
-There is sample document `sib.pdf` with password, which is the last five digits of customer registered mobile number and date of birth (DOB) in DDMMYY. my dob is 04/Dec/1988, so the password will be xxxxx041288
+There is sample document `sib.pdf` with password, which is the last five digits of customer registered mobile number and date of birth (DOB) in DDMMYY. my dob is 04/Dec/1988,mobile is 8547622462 so the password will be 22462041288
 
 ```
-./target/debug/pdfrip sib.pdf -q {0-1000}041288
+./target/debug/pdfrip sib.pdf -w wordlist.txt
 ```
